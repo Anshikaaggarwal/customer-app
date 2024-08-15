@@ -1,5 +1,9 @@
 import React from "react";
 
+import Footer from './components/Footer.js'
+
+
+
 const orders = [
   {
     date: "Jan 24, 2020",
@@ -135,8 +139,14 @@ function OrderHistory() {
           </button>
         </div>
       )}
+
+      {/* <Footer/> */}
     </div>
+    
   );
 }
 
 export default OrderHistory;
+
+   
+
