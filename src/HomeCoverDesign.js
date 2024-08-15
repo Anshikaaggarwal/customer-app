@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+
 import Home from './components/Home.js'
 import Footer from './components/Footer.js'
+
 import {
   FaShoppingCart,
   FaApple,
@@ -189,6 +191,7 @@ const HomeCoverDesign = () => {
           </a>
 {/* spread operator (...). The spread operator is useful when you want to apply a base style and then override or add additional styles.
            */}
+
           {/* <div style={styles.menuItem}>VIRTUAL TRY-ON</div> */}
           <a
             href="/tryon"
@@ -200,6 +203,8 @@ const HomeCoverDesign = () => {
           >
             VIRTUAL TRY ON
           </a>
+
+
           <a
             href="/order-list"
             style={{
@@ -255,10 +260,16 @@ const HomeCoverDesign = () => {
           );
         })}
       </div>
+
       <Home/>
       <Footer/>
+
     </div>
   );
 };
 
+
 export default HomeCoverDesign;
+
+export default HomeCoverDesign;
+
