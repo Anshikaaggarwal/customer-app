@@ -1,8 +1,7 @@
+
 import React, { useState } from "react";
-
-import Home from './components/Home.js'
-import Footer from './components/Footer.js'
-
+import Home from './components/Home.js';
+import Footer from './components/Footer.js';
 import {
   FaShoppingCart,
   FaApple,
@@ -36,7 +35,7 @@ const HomeCoverDesign = () => {
       padding: "20px",
       borderRadius: "8px",
       width: "100%",
-      height: "100vh",
+      minHeight: "100vh", // Ensure it takes up at least the full viewport height
       position: "relative",
       overflow: "hidden", // To hide the icons when they move out of the screen
     },
@@ -144,6 +143,7 @@ const HomeCoverDesign = () => {
       },
     },
   };
+
   const textVariants = {
     hidden: { opacity: 0, y: -50 },
     visible: {
@@ -169,107 +169,105 @@ const HomeCoverDesign = () => {
   ];
 
   return (
-    <div style={styles.container}>
-      <FaBars style={styles.hamburger} onClick={toggleMenu} />
-      {menuOpen && (
-        <motion.div
-          style={styles.fullScreenMenu}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <FaTimes style={styles.closeIcon} onClick={toggleMenu} />
-          <a
-            href="/"
-            style={{
-              ...styles.menuItem,
-              textDecoration: "none",
-              color: "inherit",
-            }}
+    <div>
+      {/* HomeCoverDesign Section */}
+      <div style={styles.container}>
+        <FaBars style={styles.hamburger} onClick={toggleMenu} />
+        {menuOpen && (
+          <motion.div
+            style={styles.fullScreenMenu}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
           >
-            HOME
-          </a>
-{/* spread operator (...). The spread operator is useful when you want to apply a base style and then override or add additional styles.
-           */}
-
-          {/* <div style={styles.menuItem}>VIRTUAL TRY-ON</div> */}
-          <a
-            href="/tryon"
-            style={{
-              ...styles.menuItem,
-              textDecoration: "none",
-              color: "inherit",
-            }}
-          >
-            VIRTUAL TRY ON
-          </a>
-
-
-          <a
-            href="/order-list"
-            style={{
-              ...styles.menuItem,
-              textDecoration: "none",
-              color: "inherit",
-            }}
-          >
-            CART
-          </a>
-          
-          <a
-            href="/order-history"
-            style={{
-              ...styles.menuItem,
-              textDecoration: "none",
-              color: "inherit",
-            }}
-          >
-            ORDER HISTORY
-          </a>
-        </motion.div>
-      )}
-      <motion.div
-        style={styles.textSection}
-        initial="hidden"
-        animate="visible"
-        variants={textVariants}
-      >
-        <motion.h1 style={styles.heading} variants={textVariants}>
-          You don’t need to reinvent the wheel.
-        </motion.h1>
-        <motion.p style={styles.paragraph} variants={textVariants}>
-          We are on a mission to transform the retail stores.
-        </motion.p>
-      </motion.div>
-      <div style={styles.iconSection}>
-        {icons.map((icon, index) => {
-          const IconComponent = icon.component;
-          return (
-            <motion.a
-              key={index}
-              href={icon.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={styles.iconWrapper}
-              custom={index}
-              animate="animate"
-              variants={iconVariants}
+            <FaTimes style={styles.closeIcon} onClick={toggleMenu} />
+            <a
+              href="/"
+              style={{
+                ...styles.menuItem,
+                textDecoration: "none",
+                color: "inherit",
+              }}
             >
-              <IconComponent style={{ ...styles.icon, ...icon.style }} />
-            </motion.a>
-          );
-        })}
+              HOME
+            </a>
+
+            <a
+              href="/tryon"
+              style={{
+                ...styles.menuItem,
+                textDecoration: "none",
+                color: "inherit",
+              }}
+            >
+              VIRTUAL TRY ON
+            </a>
+
+            <a
+              href="/order-list"
+              style={{
+                ...styles.menuItem,
+                textDecoration: "none",
+                color: "inherit",
+              }}
+            >
+              CART
+            </a>
+            
+            <a
+              href="/order-history"
+              style={{
+                ...styles.menuItem,
+                textDecoration: "none",
+                color: "inherit",
+              }}
+            >
+              ORDER HISTORY
+            </a>
+          </motion.div>
+        )}
+        <motion.div
+          style={styles.textSection}
+          initial="hidden"
+          animate="visible"
+          variants={textVariants}
+        >
+          <motion.h1 style={styles.heading} variants={textVariants}>
+            You don’t need to reinvent the wheel.
+          </motion.h1>
+          <motion.p style={styles.paragraph} variants={textVariants}>
+            We are on a mission to transform the retail stores.
+          </motion.p>
+        </motion.div>
+        <div style={styles.iconSection}>
+          {icons.map((icon, index) => {
+            const IconComponent = icon.component;
+            return (
+              <motion.a
+                key={index}
+                href={icon.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={styles.iconWrapper}
+                custom={index}
+                animate="animate"
+                variants={iconVariants}
+              >
+                <IconComponent style={{ ...styles.icon, ...icon.style }} />
+              </motion.a>
+            );
+          })}
+        </div>
       </div>
 
-      <Home/>
-      <Footer/>
+      {/* Home Section */}
+      <Home />
 
+      {/* Footer Section */}
+      <Footer />
     </div>
   );
 };
-
-
-export default HomeCoverDesign;
 
 export default HomeCoverDesign;
 
