@@ -1,4 +1,3 @@
-
 import './App.css';
 import Home from './components/Home.js'
 import TryOn from './components/TryOn.js';
@@ -33,18 +32,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
