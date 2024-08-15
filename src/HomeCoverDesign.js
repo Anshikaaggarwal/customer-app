@@ -182,7 +182,7 @@ const HomeCoverDesign = () => {
           >
             <FaTimes style={styles.closeIcon} onClick={toggleMenu} />
             <a
-              href="/"
+              href="/home"
               style={{
                 ...styles.menuItem,
                 textDecoration: "none",
