@@ -1,0 +1,192 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+
+  .page1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .profile-card {
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+    padding: 100x;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.664);
+    position: relative;
+    width: 380px;
+    min-height: 280px;
+    
+  }
+
+  .profile-card img{
+    width: 380px;
+    min-height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .profile-icon {
+    background-color: #ffe4e1;
+    border-radius: 50%;
+    padding: 20px;
+    display: inline-block;
+    font-size: 24px;
+  }
+  
+  .profile-title {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .transaction-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .transaction {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .transaction-title {
+    font-weight: bold;
+    color: #4b4b4b;
+  }
+  
+  .transaction-location {
+    color: #7a7a7a;
+  }
+  
+  .amount {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .right-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .right-section h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .features {
+    margin-top: 20px;
+    display: flex;
+    width: 500px;
+    gap: 20px;
+  }
+  
+  .feature {
+    margin-bottom: 20px;
+  }
+
+  .feature p{
+    max-width: 250px;
+  }
+  
+  .feature h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .featureright .feature{
+    margin-bottom: 40px;
+  }
+  .explore-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .explore-link:hover {
+    text-decoration: underline;
+  }
+
+
+
+  /* New Section CSS */
+.new-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(23, 23, 23);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 40px;
+    color: white;
+    width: 75%;
+  }
+  
+  .content-left {
+    flex: 1;
+  }
+  
+  .content-left h2 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .content-left p {
+    margin-top: 15px;
+    font-size: 16px;
+    width: 400px;
+  }
+  
+  .download-button {
+    margin-top: 20px;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .download-button:hover {
+    background-color: #ff4c4c;
+  }
+  
+  .content-right {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .image1 {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .image2 {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
