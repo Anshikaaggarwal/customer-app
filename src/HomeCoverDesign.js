@@ -233,10 +233,10 @@ const HomeCoverDesign = () => {
           variants={textVariants}
         >
           <motion.h1 style={styles.heading} variants={textVariants}>
-            You don’t need to reinvent the wheel.
+            We are on a mission to transform the retail stores.
           </motion.h1>
           <motion.p style={styles.paragraph} variants={textVariants}>
-            We are on a mission to transform the retail stores.
+            You don’t need to reinvent the wheel.
           </motion.p>
         </motion.div>
         <div style={styles.iconSection}>
