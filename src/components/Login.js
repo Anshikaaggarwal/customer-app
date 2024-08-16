@@ -9,7 +9,7 @@ export const Login = () => {
         <div className='card'>
             <div className='left'>
                 <h1>Hello</h1>
-                <p>Welcome to Walmart!</p>
+                <p>Welcome to Smart Shopper!</p>
                 
             </div>
             <div className='right'>
