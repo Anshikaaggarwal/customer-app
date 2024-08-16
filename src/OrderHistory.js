@@ -1,6 +1,7 @@
 import React from "react";
 
 import Footer from './components/Footer.js'
+import { Link } from 'react-router-dom';
 
 
 
@@ -59,7 +60,7 @@ function OrderHistory() {
               >
                 Past Orders
               </button>
-              <button style={{ color: "#888" }}>Upcoming Orders</button>
+              <Link to="/order-list"><button style={{ color: "#888" }}>Upcoming Orders</button></Link>
             </div>
             <div style={{ color: "#888" }}>{orders.length} Orders</div>
           </div>

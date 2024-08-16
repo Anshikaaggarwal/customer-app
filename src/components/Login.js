@@ -8,8 +8,8 @@ export const Login = () => {
     <div id='login'>
         <div className='card'>
             <div className='left'>
-                <h1>Hello</h1>
-                <p>Welcome to ABC!</p>
+                <h1>Hello!</h1>
+                <p>Welcome to Smart Shopper!</p>
                 
             </div>
             <div className='right'>
